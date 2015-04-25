@@ -1,19 +1,19 @@
 # LabVLC
-Programmatic video control in LabVIEW, version 1.0
+Video playback and control in LabVIEW. LabVLC provides a high-level library for adding video to your LabVIEW projects using [VLC](http://www.videolan.org/vlc/index.html), an open source media player. You can use it to display a demonstration video of your VI within the VI itself, quickly and interactively tune video playback speed and audio, or just watch a movie. LabVLC can turn LabVIEW into VLC. 
 
 ![demo](https://raw.githubusercontent.com/mciantyre/LabVLC/master/demo.PNG)
 
 ![blockdemo](https://raw.githubusercontent.com/mciantyre/LabVLC/master/blockdemo.PNG)
 
 ### Features
-LabVLC provides a high-level library for adding video playback to your LabVIEW projects
 - Play, pause, mute, stop video
 - Manipulate video volume
-- Manipulate video playback speed (affects sound pitch)
+- Manipulate video playback speed (affects sound tempo, but not pitch)
+- Works with all VLC video codecs (many many many)
 
 ### Dependencies
 - LabVIEW
-- VLC
+- [VLC](http://www.videolan.org/vlc/index.html)
 
 ### Workflow
 1. Initialize a VLC controller  in your VI using ```LabVLC - InitControl.vi```. Requires a pointer to the ```libvlc.dll``` of the VLC installation directory, a path to your video, and a PictureBox handle (.NET).
@@ -22,10 +22,9 @@ LabVLC provides a high-level library for adding video playback to your LabVIEW p
 4. Stop the video when desired (```LabVLC - StopControl.vi```)
 5. Release the VLC media player using ```LabVLC - TerminateControl.vi```
 
-See ```LabVLC - Example.vi``` to try out a simple video player
+See ```LabVLC - Example.vi``` to try out a simple video player (pictured above)
 
 ### Future work
-1. Rewrite documentation to correspond with version 1.0 changes
-2. Rewind and fast-forward capabilities
-3. Chapter skipping and video bookmarking
+- Rewind and fast-forward capabilities
+- Chapter skipping and video bookmarking
 
