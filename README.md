@@ -22,9 +22,10 @@ LabVLC provides a high-level library for adding video playback to your LabVIEW p
 4. Stop the video when desired (```LabVLC - StopControl.vi```)
 5. Release the VLC media player using ```LabVLC - TerminateControl.vi```
 
-### Future work (in order)
-1. Rewind and fast-forward capabilities
-2. Chapter skipping and video bookmarking
+See ```LabVLC - Example.vi``` to try out a simple video player
 
-### License
-MIT
+### Future work
+1. Rewrite documentation to correspond with version 1.0 changes
+2. Rewind and fast-forward capabilities
+3. Chapter skipping and video bookmarking
+
