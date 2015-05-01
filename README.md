@@ -1,4 +1,7 @@
 # LabVLC
+
+_Project development has stopped. This release is stable but will no longer continue._
+
 Video playback and control in LabVIEW. LabVLC provides a high-level library for adding video to your LabVIEW projects using [VLC](http://www.videolan.org/vlc/index.html), an open source media player. You can use it to display a demonstration video of your VI within the VI itself, quickly and interactively tune video playback speed and audio, or just watch a movie. LabVLC can turn LabVIEW into VLC. 
 
 ![demo](https://raw.githubusercontent.com/mciantyre/LabVLC/master/demo.PNG)
